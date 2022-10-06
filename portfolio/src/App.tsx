@@ -51,7 +51,13 @@ function App() {
             projectLink="https://movieguesser.com"
             image="/images/movieguesser_demo.png"
             imageLeft={true}
-            technologies={[TypeScript, ReactTech, TailwindCSS, Firebase]}
+            technologies={[
+              TypeScript,
+              ReactTech,
+              TailwindCSS,
+              //Firebase
+              GoogleCloud,
+            ]}
           />
         </section>
         <section id="TV Ratings">
@@ -80,10 +86,10 @@ function App() {
             technologies={[
               TypeScript,
               NextJS,
-              UIComponents,
+              //UIComponents,
               Scraping,
               Heroku,
-              Firebase,
+              //Firebase,
               GoogleCloud,
             ]}
           />
@@ -111,7 +117,14 @@ function App() {
             image="/images/tickertracker_demo.png"
             imageLeft={true}
             wideImage={true}
-            technologies={[JavaScript, ReactTech, Redux, RESTAPI, Firebase]}
+            technologies={[
+              JavaScript,
+              ReactTech,
+              Redux,
+              RESTAPI,
+              //Firebase
+              GoogleCloud,
+            ]}
           />
         </section>
       </div>

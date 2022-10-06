@@ -50,28 +50,32 @@ const ProjectPage = (props: any) => {
           )
         )}
         <div className="flex w-full gap-4">
-          <a
-            className=" flex-center rounded-md bg-blue-700 py-1 text-slate-300 transition hover:bg-blue-800 hover:no-underline"
-            href={props.projectLink}
-            target="_blank"
-          >
-            <span className="px-2">
-              <AiOutlineLink />
-            </span>
-            <div className=" h-full w-[1px] bg-slate-300" />
-            <span className="px-2">Website</span>
-          </a>
-          <a
-            className=" flex-center rounded-md bg-slate-300 py-1 text-slate-800 transition hover:bg-slate-400 hover:no-underline"
-            href={props.githubLink}
-            target="_blank"
-          >
-            <span className="px-2">
-              <BiGitBranch />
-            </span>
-            <div className=" h-full w-[1px] bg-slate-500" />
-            <span className="px-2">Source</span>
-          </a>
+          {props.projectLink && (
+            <a
+              className=" flex-center rounded-md bg-blue-700 py-1 text-slate-300 transition hover:bg-blue-800 hover:no-underline"
+              href={props.projectLink}
+              target="_blank"
+            >
+              <span className="px-2">
+                <AiOutlineLink />
+              </span>
+              <div className=" h-full w-[1px] bg-slate-300" />
+              <span className="px-2">Website</span>
+            </a>
+          )}
+          {props.githubLink && (
+            <a
+              className=" flex-center rounded-md bg-slate-300 py-1 text-slate-800 transition hover:bg-slate-400 hover:no-underline"
+              href={props.githubLink}
+              target="_blank"
+            >
+              <span className="px-2">
+                <BiGitBranch />
+              </span>
+              <div className=" h-full w-[1px] bg-slate-500" />
+              <span className="px-2">Source</span>
+            </a>
+          )}
         </div>
       </div>
     );
