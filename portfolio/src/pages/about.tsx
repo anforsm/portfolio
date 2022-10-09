@@ -37,7 +37,7 @@ const About = () => {
           <div className="flex-center basis-1/2 flex-col lg:text-left">
             <p>
               I'm a Software Engineer from Stockholm, Sweden. I'm currently
-              pursuing a masters degree in computer science at{" "}
+              pursuing a masters degree in Machine Learning at{" "}
               <a href="https://kth.se/en" target="_blank">
                 KTH Royal Institute of Technology
               </a>
