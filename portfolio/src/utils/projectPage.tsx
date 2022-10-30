@@ -27,6 +27,45 @@ const ProjectPage = (props: any) => {
     );
   };
 
+  const textParse = (text: string) => {
+    let parsedText = [];
+
+    let foundAllLinks = false;
+    while (!foundAllLinks) {
+      let linkstart = text.indexOf("<link>");
+      if (linkstart == -1) {
+        foundAllLinks = true;
+        break;
+      }
+      parsedText.push(<>{text.substring(0, linkstart)}</>);
+
+      let linkend = text.indexOf("</link>");
+      let link = text.substring(linkstart + 6, linkend);
+      let linkTextStart = link.indexOf("<text>");
+      let linkTextEnd = link.indexOf("</text>");
+      let linkText = link.substring(linkTextStart + 6, linkTextEnd);
+      let linkUrlStart = link.indexOf("<url>");
+      let linkUrlEnd = link.indexOf("</url>");
+      let linkUrl = link.substring(linkUrlStart + 5, linkUrlEnd);
+      parsedText.push(
+        <a
+          href={linkUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="text-blue-400 hover:text-blue-500"
+        >
+          {linkText}
+        </a>
+      );
+
+      text = text.substring(linkend + 7);
+    }
+
+    parsedText.push(<>{text}</>);
+
+    return parsedText;
+  };
+
   const getDescription = () => {
     return (
       <div
@@ -38,7 +77,7 @@ const ProjectPage = (props: any) => {
           (paragraph: { subtitle: string; text: string }, index: number) => (
             <>
               <h6 className="my-1">{paragraph.subtitle}</h6>
-              <p className=" text-base">{paragraph.text}</p>
+              <p className=" text-base">{textParse(paragraph.text)}</p>
               <div
                 className={`min-h-[1rem] w-full  ${
                   index === props.aboutProject.length - 1

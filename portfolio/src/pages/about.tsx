@@ -50,7 +50,7 @@ const About = () => {
         <div className=" absolute left-6 top-0 h-20 w-20 -scale-x-100 -scale-y-100">
           <Arrow />
         </div>
-        <h4 className="absolute top-20 left-10">Check out my work</h4>
+        <h4 className="absolute top-20 left-10">Check out my projects</h4>
       </div>
     </div>
   );

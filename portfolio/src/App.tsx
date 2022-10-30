@@ -11,6 +11,7 @@ import {
   Heroku,
   JavaScript,
   NextJS,
+  Python,
   ReactTech,
   Redux,
   RESTAPI,
@@ -125,6 +126,28 @@ function App() {
               //Firebase
               GoogleCloud,
             ]}
+          />
+        </section>
+        <section id="NeuronSim">
+          <ProjectPage
+            color="#3c3c75"
+            skew={-80}
+            projectName="NeuronSim"
+            aboutProject={[
+              {
+                subtitle: "Description",
+                text: `NeuronSim is a simulator for neurons in biological neural networks. The simulator was created in conjunction with my bachelor's thesis <link><text>"The Impact of Noise when Decoding Information in Highly Curved Neuronal Encoding Manifolds"</text><url>https://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1700457&dswid=138</url></link> <link><text>[PDF]</text><url>https://kth.diva-portal.org/smash/get/diva2:1700457/FULLTEXT01.pdf</url></link>. 
+                My thesis explores how the brain can decode information from a noisy signal (stimuli), and how neurons with different properties are affected differently by noise. The simulator can be used to simulate information decoding in a network of neurons with different properties, and thus observe how the properties of the neurons affect the decoding accuracy.`,
+              },
+              {
+                subtitle: "Technologies",
+                text: "The simulator is written in Python with the help of numpy. The visualizations are created using matplotlib.",
+              },
+            ]}
+            image="/images/neuronsim_demo.png"
+            wideImage={true}
+            githubLink="https://github.com/siljeholm-forsman/neuronsim"
+            technologies={[Python]}
           />
         </section>
       </div>

@@ -139,6 +139,12 @@ const TypeScript = () => {
   );
 };
 
+const Python = () => {
+  return (
+    <TechnologyTemplate technology="Python" color="#3776ab" textcol="light" />
+  );
+};
+
 export default TechnologyTemplate;
 export {
   ReactTech,
@@ -153,4 +159,5 @@ export {
   Redux,
   JavaScript,
   TypeScript,
+  Python,
 };

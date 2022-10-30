@@ -2,7 +2,13 @@ import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { useMediaQuery } from "react-responsive";
 
-let pages = ["About me", "Movieguesser", "TV Ratings", "Tickertracker"];
+let pages = [
+  "About me",
+  "Movieguesser",
+  "TV Ratings",
+  "Tickertracker",
+  "NeuronSim",
+];
 
 const getScrollPage = () => {
   let scrollPosition = window.scrollY;
