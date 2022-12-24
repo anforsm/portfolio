@@ -1,5 +1,6 @@
 import { ReactComponent as Arrow } from "./../svg/arrow.svg";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { ReactComponent as GitLab } from "./../svg/gitlab.svg";
 
 const About = () => {
   return (
@@ -11,22 +12,31 @@ const About = () => {
             <h1 className="-mt-6 mb-3 select-none tracking-tighter lg:-mt-12 lg:mb-0">
               anton
             </h1>
-            <div className="flex-center gap-2">
-              <a
-                href="https://www.linkedin.com/in/antonforsman/"
-                target="_blank"
-                className="flex-center text-[#0077b5]"
-              >
-                <AiFillLinkedin className="mr-1 h-8 w-8" />
-                /antonforsman
-              </a>
+            <div className="flex-center flex-wrap gap-2">
               <a
                 href="https://github.com/anforsm"
                 target="_blank"
-                className="flex-center text-[#24292f]"
+                className="flex-center text-[#24292f] lg:basis-1/3"
               >
                 <AiFillGithub className="mr-1 h-8 w-8" />
                 /anforsm
+              </a>
+
+              <a
+                href="https://gitlab.com/anforsm"
+                target="_blank"
+                className="flex-center text-[#e24329] lg:basis-1/3"
+              >
+                <GitLab className="mr-1 aspect-square h-8" />
+                /anforsm
+              </a>
+              <a
+                href="https://www.linkedin.com/in/antonforsman/"
+                target="_blank"
+                className="flex-center text-[#0077b5] lg:basis-1"
+              >
+                <AiFillLinkedin className="mr-1 h-8 w-8" />
+                /antonforsman
               </a>
             </div>
           </div>
