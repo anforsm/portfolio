@@ -16,7 +16,7 @@ const SlantedPage = (props: {
         className="absolute -top-20 z-30 h-20 w-full"
         style={{
           backgroundColor: props.color,
-          clipPath: `polygon(0 100%, 100% 100%, ${
+          clipPath: `polygon(0 101%, 100% 101%, ${
             positiveSkew ? "0%" : `100%`
           } calc(100% - ${Math.abs(props.skew)}%))`,
         }}
