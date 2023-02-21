@@ -49,6 +49,7 @@ function App() {
                 text: "The focus of the application is on the user experience and the design. The application is designed to be simple and intuitive.",
               },
             ]}
+            githubLink="https://github.com/anforsm/movieguesser"
             projectLink="https://movieguesser.com"
             image="/images/movieguesser_demo.png"
             imageLeft={true}
@@ -114,7 +115,8 @@ function App() {
                 text: "The main focus of the application was to incorporate many different web technologies, while also creating something that I personally can use and enjoy.",
               },
             ]}
-            projectLink="https://tickertracker.nootna.com"
+            githubLink="https://github.com/siljeholm-forsman/Tickertracker"
+            projectLink="https://tickertracker.anforsm.com"
             image="/images/tickertracker_demo.png"
             imageLeft={true}
             wideImage={true}
