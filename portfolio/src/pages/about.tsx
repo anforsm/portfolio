@@ -47,11 +47,19 @@ const About = () => {
           <div className="flex-center basis-1/2 flex-col lg:text-left">
             <p>
               I'm a Software Engineer from Stockholm, Sweden. I'm currently
-              pursuing a masters degree in Machine Learning at{" "}
+              pursuing a master's degree in Machine Learning at{" "}
+              <a href="https://utexas.edu" target="_blank">
+                UT Austin
+              </a> {" "} / {" "}
               <a href="https://kth.se/en" target="_blank">
                 KTH Royal Institute of Technology
               </a>
               .
+              <br />
+              <br />
+              <a href="https://anforsm.com/resume.pdf" target="_blank">
+                Resume
+              </a>
             </p>
           </div>
         </div>
