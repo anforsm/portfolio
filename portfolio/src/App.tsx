@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import About from "./pages/about";
+import ProjectCard from "./utils/projectCard";
 import PageNav from "./pageNav";
 import SlantedPage from "./utils/slantedPage";
 import ProjectPage from "./utils/projectPage";
@@ -23,13 +24,69 @@ import {
 
 function App() {
   //<Movieguesser />
+      //<PageNav />
   return (
     <div className="App relative">
-      <PageNav />
       <div className=" flex flex-col">
         <section id="About me">
           <About />
         </section>
+        <section id="Projects">
+          <h3>Projects</h3>
+          <div className="flex flex-wrap justify-center p-4">
+            <ProjectCard
+              name="Autoseg"
+              source="https://github.com/anforsm/autoseg"
+              image="autoseg.png"
+              description="Autoseg is a repository for automatic segmentation of 3D EM images."
+            />
+            <ProjectCard
+              name="Self-Refine Experiments"
+              source="https://github.com/anforsm/self-refine"
+              image="selfrefine.png"
+              description="Self-Refine is a framework for self-improving LLMs. This project contains experiments with different LLMs."
+            />
+            <ProjectCard
+              name="Movie Diffusion"
+              source="https://github.com/anforsm/movie-diffusion"
+              image="diffusion.png"
+              description="Movie Diffusion is a diffusion model implemented from scratch trained to generate movie posters."
+            />
+            <ProjectCard
+              name="NeuronSim"
+              source="https://github.com/siljeholm-forsman/neuronsim"
+              image="neuronsim.png"
+              description="NeuronSim is a simulator for neurons in biological neural networks. Created for my bachelor's thesis."
+            />
+            <ProjectCard
+              name="Movieguesser"
+              link="https://movieguesser.com"
+              source="https://github.com/anforsm/movieguesser"
+              image="movieguesser.png"
+              description="Movieguesser is a Wordle-inspired game where users try to guess the name of a movie given some clues about it."
+            />
+            <ProjectCard
+              name="TV Ratings"
+              link="https://tvratings.anforsm.com"
+              source="https://github.com/anforsm/tvratings"
+              image="tvratings.png"
+              description="TV Ratings is a service to display the IMDb ratings of TV episodes in a more user-friendly way."
+            />
+            <ProjectCard
+              name="Tickertracker"
+              link="https://tickertracker.anforsm.com"
+              source="https://github.com/siljeholm-forsman/Tickertracker"
+              image="tickertracker.png"
+              description="Tickertracker is a webapp to discover trending stocks on social media, as well as to track price, forum discussions and other metrics of a stock."
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+  )
+}
+/*
+    </div>
         <section id="Movieguesser">
           <ProjectPage
             color="#753c3c"
@@ -155,6 +212,6 @@ function App() {
       </div>
     </div>
   );
-}
+}*/
 
 export default App;
