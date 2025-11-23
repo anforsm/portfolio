@@ -4,31 +4,34 @@
     box-sizing: border-box;
 }
 
-body {
+:root {
     --bg-color: #fff;
     --text-color: #000;
     --border-color: #ddd;
     --secondary-text: #666;
 }
 
-body.dark-theme {
+html.dark-theme {
     --bg-color: #1a1a1a;
     --text-color: #e0e0e0;
     --border-color: #444;
     --secondary-text: #999;
 }
 
+html {
+    background: var(--bg-color);
+    transition: background 0.3s ease;
+}
+
 body {
     font-family: monospace;
     line-height: 1.6;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: transparent;
     max-width: 650px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    transition:
-        background 0.3s ease,
-        color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 a {
@@ -181,45 +184,17 @@ h2 {
     position: fixed;
     top: 1rem;
     right: 1rem;
-    width: 40px;
-    height: 40px;
     cursor: pointer;
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
+    font-size: 0.75rem;
+    color: var(--secondary-text);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
 }
 
 .theme-toggle:hover {
-    opacity: 1;
-}
-
-#theme-toggle {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.theme-toggle svg {
-    width: 100%;
-    height: 100%;
-    stroke: var(--text-color);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s ease;
-}
-
-.sun-icon {
-    opacity: 1;
-}
-
-.moon-icon {
-    opacity: 0;
-}
-
-body.dark-theme .sun-icon {
-    opacity: 0;
-}
-
-body.dark-theme .moon-icon {
-    opacity: 1;
+    color: var(--text-color);
 }
