@@ -307,5 +307,64 @@
                 </div>
             </div>
         </div>
+
+        <!-- Hosted with Spawned badge — self-contained, drop into any site -->
+        <style>
+            #spawned-badge {
+                position: fixed;
+                bottom: 12px;
+                right: 12px;
+                z-index: 20;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 7px 10px;
+                border-radius: 8px;
+                background: rgba(17, 17, 17, 0.88);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);
+                color: #fff;
+                text-decoration: none;
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                font-size: 12px;
+                line-height: 1;
+                transition: opacity 0.15s ease;
+            }
+            #spawned-badge:hover {
+                opacity: 0.8;
+            }
+            #spawned-badge .sb-muted {
+                opacity: 0.65;
+            }
+            #spawned-badge .sb-name {
+                font-weight: 600;
+                letter-spacing: 0.01em;
+                margin-left: -2.5px;
+            }
+        </style>
+        <a
+            id="spawned-badge"
+            href="https://spawned.ai/?utm_source=anforsm&utm_medium=badge"
+            target="_blank"
+            rel="noopener"
+            title="Spawned, build and host web apps"
+        >
+            <span class="sb-muted">hosted with</span>
+            <svg
+                width="13"
+                height="13"
+                viewBox="0 0 417.67 417.67"
+                fill="currentColor"
+                aria-hidden="true"
+            >
+                <path
+                    d="M207.65,364.42c-86.54,0-156.95-70.4-156.95-157s70.41-156.95,157-156.95A155.92,155.92,0,0,1,298,79.09l.11.07c41,26.36,66.52,75.5,66.54,128.25v.13c0,52.74-25.52,101.88-66.54,128.25a.41.41,0,0,0-.11.07A155.93,155.93,0,0,1,207.65,364.42Zm24.13-291c-65.52,0-118.82,60.12-118.82,134s53.3,134,118.82,134a108.48,108.48,0,0,0,58.34-17.26l.12-.08A143.31,143.31,0,0,0,350.6,207.53v-.12A143.3,143.3,0,0,0,290.24,90.79l-.12-.09A108.55,108.55,0,0,0,231.78,73.45Z"
+                />
+            </svg>
+            <span class="sb-name">Spawned</span>
+        </a>
     </body>
 </html>
